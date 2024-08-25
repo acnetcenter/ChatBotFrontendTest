@@ -49,11 +49,11 @@ const mainContainer = document.getElementById('main-container');
 const textarea = document.getElementById('prompt');
 
 // Detectar si estamos en un dispositivo móvil (ancho <= 768px)
-if (window.matchMedia("(max-width: 390px)").matches) {
+if (window.matchMedia("(max-width: 450px)").matches) {
 
     // Lógica para manejar el focus y blur del textarea
     textarea.addEventListener('focus', function () {
-        mainContainer.style.height = '55vh';
+        mainContainer.style.height = '50vh';
     });
 
     textarea.addEventListener('blur', function () {
