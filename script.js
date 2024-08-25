@@ -28,8 +28,6 @@ function sendMessage() {
     if (userPrompt) {
         // Mostrar el mensaje del usuario alineado a la derecha
         addMessageToContainer(userPrompt, 'user-message');
-
-
     } else {
         alert("Please enter a message.");
     }
@@ -61,4 +59,22 @@ if (window.matchMedia("(max-width: 450px)").matches) {
     });
 }
 
+/*
+const methodOne = document.getElementById('prompt');
+window.addEventListener('DOMContentLoaded', () => {
+  setTimeout(() => window.scrollTo(0, 100));
+  methodOne.addEventListener('focus', () => {
+    methodOne.style.opacity = 0;
+    setTimeout(() => (methodOne.style.opacity = 1));
+  });
+});
+*/
 
+
+// 1. Get a target element that you want to persist scrolling for (such as a modal/lightbox/flyout/nav).
+// Specifically, the target element is the one we would like to allow scroll on (NOT a parent of that element).
+// This is also the element to apply the CSS '-webkit-overflow-scrolling: touch;' if desired.
+const targetElement = document.getElementById('chat-container');
+
+// 2. ...in some event handler after showing the target element...disable body scroll
+bodyScrollLock.disableBodyScroll(targetElement);

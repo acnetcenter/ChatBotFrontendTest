@@ -38,7 +38,6 @@
     padding: 20px 0 20px 0;
     scrollbar-width: thin;
     scrollbar-color: gray transparent;
-    scrollbar-width: thin;
     scrollbar-gutter: stable;
     flex: 1;
   }
