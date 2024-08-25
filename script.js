@@ -62,5 +62,3 @@ if (window.matchMedia("(max-width: 390px)").matches) {
 }
 
 
-
-
