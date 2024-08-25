@@ -53,7 +53,7 @@ if (window.matchMedia("(max-width: 450px)").matches) {
 
     // Lógica para manejar el focus y blur del textarea
     textarea.addEventListener('focus', function () {
-        mainContainer.style.height = '40vh';
+        mainContainer.style.height = '45vh';
     });
 
     textarea.addEventListener('blur', function () {
