@@ -41,6 +41,7 @@
     scrollbar-width: thin;
     scrollbar-gutter: stable;
     flex: 1;
+  }
   
   .form-control {
     resize: none;
@@ -76,7 +77,4 @@
   
   /****************************** BREAK POINTS ********************************/
   
-  @media (max-width: 390px) {
-
-  }
   
